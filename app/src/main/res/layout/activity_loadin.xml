@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_loadin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.materialsignup.LoadinActivity"
+    android:background="@color/colorPrimary">
+
+
+    <com.crystal.crystalpreloaders.widgets.CrystalPreloader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:crs_pl_style="expandable_balls"
+        app:crs_pl_size="small"
+        app:crs_pl_fg_color="#fff"
+        app:crs_pl_bg_color="#fff"
+        app:layout_constraintRight_toRightOf="@+id/activity_loadin"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_loadin"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="@+id/activity_loadin"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_loadin"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/crystalPreloader" />
+
+    <app.materialsignup.fonts.robotoThinBold
+        android:text="Processing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@+id/crystalPreloader"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/crystalPreloader"
+        app:layout_constraintLeft_toLeftOf="@+id/crystalPreloader" />
+
+    <app.materialsignup.fonts.robotoThinBold
+        android:text="Success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/success"
+        android:textColor="#fff"
+        android:alpha="0.0"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@+id/crystalPreloader"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/crystalPreloader"
+        app:layout_constraintLeft_toLeftOf="@+id/crystalPreloader" />
+
+
+</android.support.constraint.ConstraintLayout>

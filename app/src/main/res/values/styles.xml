@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2c2e2d</item>
+        <item name="colorPrimaryDark">#2c2e2d</item>
+        <item name="colorAccent">#ffffff</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowExitTransition">@transition/enter_transition</item>
+
+
+
+
+
+    </style>
+
+
+
+
+</resources>

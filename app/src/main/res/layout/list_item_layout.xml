@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:paddingBottom="15dp"
+    android:layout_height="75dp">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:alpha="0.6"
+        android:layout_alignParentTop="true"
+         />
+
+
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/my_dp"
+        android:id="@+id/iv_dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:siBorderColor="#000"/>
+
+    <app.materialsignup.fonts.robotoRegular
+        android:text="New subpage for janet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_title"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_alignTop="@+id/iv_dp"
+        android:layout_toRightOf="@+id/iv_dp"
+        android:layout_toEndOf="@+id/iv_dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <app.materialsignup.fonts.robotoThin
+        android:text="8 - 10am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title"
+        android:layout_alignLeft="@+id/txt_title"
+        android:layout_alignStart="@+id/txt_title"
+        android:id="@+id/txt_desc" />
+
+
+
+</RelativeLayout>
